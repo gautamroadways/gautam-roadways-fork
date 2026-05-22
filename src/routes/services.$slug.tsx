@@ -136,7 +136,7 @@ function ServiceDetailPage() {
             <div className="eyebrow">Use cases</div>
             <h2 className="mt-3">Where this service fits</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {detail.useCases.map((u) => (
+              {detail.useCases.map((u: string) => (
                 <div key={u} className="card-surface p-4 flex gap-3">
                   <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                   <p className="text-sm">{u}</p>
@@ -166,7 +166,7 @@ function ServiceDetailPage() {
           <div className="card-surface p-6">
             <div className="eyebrow">Trust indicators</div>
             <ul className="mt-4 space-y-3">
-              {detail.trust.map((t) => (
+              {detail.trust.map((t: string) => (
                 <li key={t} className="flex gap-2 text-sm"><Check className="h-4 w-4 text-accent shrink-0 mt-0.5" /> {t}</li>
               ))}
             </ul>
