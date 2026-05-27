@@ -41,7 +41,7 @@ export function Header() {
           <a href={telHref(COMPANY.primaryPhone)} className="btn btn-ghost text-sm">
             <Phone className="h-4 w-4" /> {COMPANY.primaryPhoneDisplay}
           </a>
-          <a href={waHref()} target="_blank" rel="noopener" className="btn btn-primary text-sm">WhatsApp</a>
+          <a href={waHref()} target="_blank" rel="noopener" className="btn btn-whatsapp text-sm">WhatsApp</a>
         </div>
 
         <button className="lg:hidden p-2" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu">
