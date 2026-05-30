@@ -74,8 +74,22 @@ function EnquiryPage() {
               <input required value={form.name} onChange={update("name")} className="input" placeholder="Full name" />
             </Field>
             <Field label="Phone number" required>
-              <input required type="tel" value={form.phone} onChange={update("phone")} className="input" placeholder="10-digit mobile" pattern="[0-9+\s]{7,}" />
-            </Field>
+              <input
+                required
+                type="tel"
+                value={form.phone}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/\D/g, "");
+                  if (value.length <= 10) {
+                    setForm((f) => ({ ...f, phone: value }));
+                  }
+                }}
+                className="input"
+                placeholder="10-digit mobile"
+                pattern="[6-9]{1}[0-9]{9}"
+                maxLength={10}
+                title="Enter a valid 10-digit mobile number"
+              />            </Field>
             <Field label="Pickup city" required>
               <select required value={form.pickup} onChange={update("pickup")} className="input">
                 {cities.map((c) => <option key={c}>{c}</option>)}

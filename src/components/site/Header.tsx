@@ -18,12 +18,20 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/85 backdrop-blur supports-[backdrop-filter]:bg-surface/70">
       <div className="container-x flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2.5" aria-label="Gautam Roadways home">
-          <img src={logo} alt="Gautam Roadways" width={36} height={36} className="h-9 w-9 object-contain" />
-          <div className="leading-tight">
+        <Link
+          to="/"
+          className="flex items-center shrink-0"
+          aria-label="Gautam Roadways home"
+        >
+          <img
+            src="/GrLogo.png"
+            alt="Gautam Roadways"
+            className="h-42 w-full object-contain"
+          />
+          {/* <div className="leading-tight">
             <div className="text-sm font-bold tracking-tight text-foreground">GAUTAM ROADWAYS</div>
             <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground">Since 1959</div>
-          </div>
+          </div> */}
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
@@ -45,7 +53,7 @@ export function Header() {
         </div>
 
         <button className="lg:hidden p-2" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu">
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-8 w-8" />}
         </button>
       </div>
       {open && (

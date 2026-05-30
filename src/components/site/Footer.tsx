@@ -8,11 +8,11 @@ export function Footer() {
       <div className="container-x py-14 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <img src={logo} alt="" width={36} height={36} className="h-9 w-9 rounded bg-white p-1" />
-            <div>
+            <img src={'/GrLogo2.png'} alt="" width={36} height={36} className="h-10 md:h-14 w-30 md:w-42  p-1" />
+            {/* <div>
               <div className="font-bold tracking-tight">GAUTAM ROADWAYS</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-white/60">Est. {COMPANY.since}</div>
-            </div>
+            </div> */}
           </div>
           <p className="mt-4 text-sm text-white/70 max-w-xs">
             Structured freight operations across the Jaipur ↔ Delhi NCR corridor. Daily dispatch, six decades of trust.
