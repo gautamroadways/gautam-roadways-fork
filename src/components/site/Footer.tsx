@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
 import { BRANCHES, COMPANY, COMPLAINT, telHref } from "@/lib/company";
+import { Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,7 +23,7 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80">Navigate</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
-            {[["/services","Services"],["/routes","Route Network"],["/about","About"],["/branches","Branches"],["/enquiry","Shipment Enquiry"]].map(([to,l]) => (
+            {[["/services", "Services"], ["/routes", "Route Network"], ["/about", "About"], ["/branches", "Branches"], ["/enquiry", "Shipment Enquiry"]].map(([to, l]) => (
               <li key={to}><Link to={to} className="hover:text-white">{l}</Link></li>
             ))}
           </ul>
@@ -31,27 +32,53 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80">Operations</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
-            {BRANCHES.slice(0,4).map((b) => (
+            {BRANCHES.slice(0, 4).map((b) => (
               <li key={b.name}>
                 <div className="font-medium text-white/90">{b.name}</div>
                 <a href={telHref(b.phones[0])} className="hover:text-white">{b.phones[0]}</a>
               </li>
             ))}
+
           </ul>
+
         </div>
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80">Escalation</h4>
           <div className="mt-4 text-sm text-white/70">
-            <div className="font-medium text-white/90">Complaints — {COMPLAINT.name}</div>
-            <a href={telHref(COMPLAINT.raw)} className="hover:text-white">{COMPLAINT.phone}</a>
+            {/* <div className="font-medium text-white/90">Complaints — {COMPLAINT.name}</div>
+            <a href={telHref(COMPLAINT.raw)} className="hover:text-white">{COMPLAINT.phone}</a> */}
             <div className="mt-4 space-y-1">
               {COMPANY.emails.map((e) => (
                 <div key={e}><a href={`mailto:${e}`} className="hover:text-white">{e}</a></div>
               ))}
             </div>
+            <div className="mt-4">
+              <a
+                href="https://linkedin.com/company/YOUR-LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+              >
+                <Linkedin className="h-4 w-4" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* <div className="mt-5">
+          <a
+            href="https://linkedin.com/company/YOUR-LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+          >
+            <Linkedin className="h-4 w-4" />
+            <span className="text-sm">LinkedIn</span>
+          </a>
+        </div> */}
+
       </div>
       <div className="border-t border-white/10">
         <div className="container-x py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/55">

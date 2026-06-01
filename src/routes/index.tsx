@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Phone, MessageCircle, Truck, Package, Warehouse, MapPin, ShieldCheck, Clock, CircleDot } from "lucide-react";
-import heroImg from "@/assets/hero-fleet.jpg";
+import heroImg from "@/assets/GrHero.png";
 import warehouseImg from "@/assets/warehouse.jpg";
 import loadingImg from "@/assets/loading.jpg";
 import { COMPANY, ROUTES, SERVICES, telHref, waHref } from "@/lib/company";
@@ -37,7 +37,7 @@ function Home() {
           <div className="max-w-3xl">
             <div className="eyebrow text-white/70 capitalize">Trusted Logistics & Freight partners since 1959</div>
             <h1 className="mt-5 text-white">
-              Reliable <span className="text-accent">freight transport</span> for businesses that can't afford delays.
+              <span className="text-accent">Gautam Roadways </span>- Reliable freight transport for businesses that can't afford delays.
             </h1>
             <p className="mt-5 text-lg text-white/80 max-w-2xl">
               We operate structured parcel, PTL, and full truckload logistics across key industrial routes in North India built on decades of operational discipline. Every shipment is handled with planning, tracking, and accountability from pickup to delivery.

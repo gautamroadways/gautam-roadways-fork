@@ -5,7 +5,7 @@ export const COMPANY = {
   emails: ["info@gautamroadways.com", "info@baggas.co.in"],
   primaryPhone: "+919214330000",
   primaryPhoneDisplay: "+91 92143 30000",
-  whatsapp: "919214330000",
+  whatsapp: "+919214333333",
 };
 
 export const BRANCHES = [

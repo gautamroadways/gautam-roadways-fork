@@ -48,7 +48,7 @@ function BranchesPage() {
               ))}
             </div>
             <a href={waHref(`Hello, I'd like to reach ${b.name}.`)} target="_blank" rel="noopener"
-               className="btn btn-whatsapp text-sm mt-3 self-start">
+              className="btn btn-whatsapp text-sm mt-3 self-start">
               <MessageCircle className="h-4 w-4" /> WhatsApp
             </a>
           </article>
@@ -62,8 +62,9 @@ function BranchesPage() {
             <div className="text-xs uppercase tracking-[0.18em] font-semibold">Complaint escalation</div>
           </div>
           <h3 className="mt-3 text-xl">{COMPLAINT.name}</h3>
-          <p className="mt-2 text-sm text-muted-foreground">Direct line for service complaints, missing parcels and delivery escalations.</p>
-          <a href={telHref(COMPLAINT.raw)} className="btn btn-dark mt-5"><Phone className="h-4 w-4" /> {COMPLAINT.phone}</a>
+          <p className="mt-2 text-sm text-muted-foreground">Direct mail for service complaints, missing parcels and delivery escalations.</p>
+          <a href={`mailto:info@gautamroadways.com`} className="btn btn-dark mt-5"><Mail className="h-4 w-4" />info@gautamroadways.com</a>
+          <p className="text-red-500 mt-3 text-sm">For complaints and service escalations only. Not for business enquiries, quotations, bookings, or office-related queries.</p>
         </div>
         <div className="card-surface p-6">
           <div className="flex items-center gap-2 text-accent">
@@ -89,6 +90,7 @@ function BranchesPage() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+          {/* <iframe title="Gautam Roadways — Jaipur Head Office" referrerPolicy="no-referrer-when-downgrade" className="w-full h-[420px] border-0" src="https://www.google.com/maps/d/embed?mid=1cufVK4IzizMX5Qsd0TxXc_wX2cDRlsQ&ehbc=2E312F" width="640" height="480"></iframe> */}
         </div>
       </section>
     </>
