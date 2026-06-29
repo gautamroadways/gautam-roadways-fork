@@ -38,7 +38,7 @@ function RoutesPage() {
         {/* Network "map" diagram */}
         <div className="card-surface p-8 md:p-10 mb-12 relative overflow-hidden">
           <div className="absolute inset-0 grid-lines opacity-30 pointer-events-none" />
-          <div className="relative grid gap-8 md:grid-cols-[200px_1fr] items-center">
+          <div className="relative grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] items-center">
             <div className="text-center md:text-left">
               <div className="inline-flex flex-col items-center md:items-start">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">

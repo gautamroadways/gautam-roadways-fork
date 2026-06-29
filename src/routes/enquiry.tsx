@@ -67,7 +67,7 @@ function EnquiryPage() {
         </div>
       </section>
 
-      <section className="container-x py-16 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+      <section className="container-x py-16 grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr]">
         <form onSubmit={onSubmit} className="card-surface p-6 md:p-8 space-y-5">
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Your name" required>

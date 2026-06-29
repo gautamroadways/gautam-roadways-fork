@@ -112,7 +112,7 @@ function Home() {
       {/* ROUTES */}
       <section className="border-y border-border bg-secondary/50">
         <div className="container-x py-20">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
             <div>
               <div className="eyebrow">Core network</div>
               <h2 className="mt-3">Five active corridors out of Jaipur.</h2>
@@ -121,7 +121,7 @@ function Home() {
               </p>
               <Link to="/routes" className="btn btn-dark mt-6">Explore route network <ArrowRight className="h-4 w-4" /></Link>
             </div>
-            <div className="grid gap-3">
+            <div className="grid grid-cols-1 gap-3">
               {ROUTES.map((r) => (
                 <Link key={r.slug} to="/routes"
                   className="card-surface p-5 flex items-center justify-between gap-4 hover:border-accent/40">
@@ -188,7 +188,7 @@ function Home() {
       </section>
 
       {/* CONTACT PREVIEW */}
-      <section className="container-x py-20 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <section className="container-x py-20 grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         <div>
           <div className="eyebrow">Reach dispatch</div>
           <h2 className="mt-3">Jaipur head office handles every booking.</h2>

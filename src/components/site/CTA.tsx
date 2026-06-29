@@ -7,7 +7,7 @@ export function CTABlock({ title = "Move freight today.", subtitle = "Talk to di
     <section className="container-x my-20">
       <div className="relative overflow-hidden rounded-2xl border border-border bg-primary text-primary-foreground p-8 md:p-12">
         <div className="absolute inset-0 opacity-[0.06] grid-lines" aria-hidden />
-        <div className="relative grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
+        <div className="relative grid grid-cols-1 gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
           <div>
             <div className="eyebrow text-white/60">Dispatch desk · Open daily</div>
             <h2 className="mt-3 text-white">{title}</h2>

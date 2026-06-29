@@ -75,7 +75,7 @@ function About() {
         </div>
       </section>
 
-      <section className="container-x py-16 grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+      <section className="container-x py-16 grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
         <img src={GrTrucks} alt="Operations" width={1600} height={1000} loading="lazy"
           className="rounded-2xl border border-border object-cover w-full h-[480px]" />
         <div>
@@ -126,7 +126,7 @@ function About() {
           <h2 className="mt-3">Evolution of the network.</h2>
           <div className="mt-10 grid gap-4">
             {timeline.map((t) => (
-              <div key={t.year} className="card-surface p-6 grid gap-4 md:grid-cols-[140px_1fr] items-start">
+              <div key={t.year} className="card-surface p-6 grid grid-cols-1 gap-4 md:grid-cols-[140px_1fr] items-start">
                 <div className="font-bold text-accent">{t.year}</div>
                 <div>
                   <h3 className="text-lg">{t.title}</h3>
